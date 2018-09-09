@@ -7,15 +7,14 @@
     <artifactId>spring-cloud</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>spring-cloud-eureka-server</artifactId>
-  <name>spring-cloud-eureka-server</name>
+  <artifactId>spring-cloud-eureka-server-ha-test</artifactId>
+  <name>spring-cloud-eureka-server-ha-test</name>
   <url>http://maven.apache.org</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
   <dependencies>
-
-	<dependency>
+<dependency>
 		<groupId>org.projectlombok</groupId>
 		<artifactId>lombok</artifactId>
 		<optional>true</optional>
@@ -25,14 +24,23 @@
 		<artifactId>spring-boot-starter-test</artifactId>
 		<scope>test</scope>
 	</dependency>
+	<!-- 客户端依赖 -->
 	<dependency>
 		<groupId>org.springframework.cloud</groupId>
-		<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
-	</dependency>
-	<!-- 开启认证 -->
+		<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+	</dependency>	
+	<dependency>
+		<groupId>org.springframework.cloud</groupId>
+		<artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
+	</dependency>	
+	<dependency>
+		<groupId>org.springframework.cloud</groupId>
+		<artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+	</dependency>	
+	<!-- 引入web，提供一个简单的api接口 -->
 	<dependency>
 		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-security</artifactId>
-	</dependency>
+		<artifactId>spring-boot-starter-web</artifactId>
+	</dependency>	
   </dependencies>
 </project>
