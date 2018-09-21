@@ -34,5 +34,11 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-web</artifactId>
 	</dependency>	
+	<!-- 导入接口依赖 -->
+	<dependency>
+	   <groupId>cn.lqdev.learning</groupId>
+	   <artifactId>spring-cloud-eureka-client-api</artifactId>
+	   <version>0.0.1-SNAPSHOT</version>
+	</dependency>
   </dependencies>
 </project>
