@@ -1,4 +1,4 @@
-package cn.lqdev.learning.springcloud.eureka;
+package cn.lqdev.learning.springcloud.eureka.server.standalone;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
