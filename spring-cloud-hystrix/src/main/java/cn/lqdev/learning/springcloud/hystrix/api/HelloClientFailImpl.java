@@ -10,7 +10,7 @@ public class HelloClientFailImpl implements IHelloClient{
 	
 	@Override
 	public String hello(String name) {
-    	log.error("restTemplate调用[hello]服务发生熔断，参数name:{}", name);
-		return "restTemplate调用[hello]服务发生熔断，参数name:" + name;
+    	log.error("restTemplate调用[hello]服务发生异常，参数name:{}", name);
+		return "restTemplate调用[hello]服务发异常，参数name:" + name;
 	}
 }

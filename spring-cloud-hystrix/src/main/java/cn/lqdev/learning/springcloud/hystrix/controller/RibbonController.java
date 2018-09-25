@@ -23,20 +23,20 @@ public class RibbonController {
 	
 	@GetMapping("/ribbon")
 	@HystrixCommand(fallbackMethod="fallback")
-	public String hello(String name) {
+	public String ribbon(String name) {
 		log.info("使用restTemplate调用服务，参数name:{}", name);
 		return restTemplate.getForObject("http://eureka-client/hello?name=" + name, String.class);
 	}
 	
 	/**
-	 * 发生熔断时调用的方法
+	 * 发生异常时调用的方法
 	 * @param name
 	 * @param throwable 发生异常时的异常信息
 	 * @return
 	 */
 	public String fallback(String name,Throwable throwable) {
-		log.error("熔断发生了", throwable);
-		log.warn("restTemplate调用服务发生熔断，参数name:{}", name);
-		return "restTemplate调用服务发生熔断，参数name：" + name;
+		log.error("发生了异常", throwable);
+		log.warn("restTemplate调用服务发生异常，参数name:{}", name);
+		return "restTemplate调用服务发生异常，参数name：" + name;
 	}
 }

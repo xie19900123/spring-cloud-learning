@@ -20,7 +20,7 @@ public class FeignController {
 	IHelloClient helloClient;
 	
 	@GetMapping("/feign")
-	public String hello(String name) {
+	public String feign(String name) {
 		log.info("使用feign调用服务，参数name:{}", name);
 		return helloClient.hello(name);
 	}

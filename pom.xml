@@ -25,7 +25,20 @@
 		<!-- springCloud版本 -->
 		<spring.cloud.version>Finchley.SR1</spring.cloud.version>
 	</properties>
-
+	  <modules>   
+		<module>spring-cloud-eureka-server</module>
+		<module>spring-cloud-eureka-client</module>
+		<module>spring-cloud-eureka-server-ha</module>	
+	    <module>spring-cloud-eureka-server-ha-test</module>
+	    <module>spring-cloud-eureka-consumer</module>
+	    <module>spring-cloud-eureka-server-standalone</module>
+	    <module>spring-cloud-eureka-consumer-ribbon</module>
+	    <module>spring-cloud-eureka-client-api</module>
+	    <module>spring-cloud-eureka-consumer-feign</module>
+	    <module>spring-cloud-hystrix</module>
+	    <module>spring-cloud-hystrix-dashboard</module>
+	    <module>spring-cloud-hystrix-turbine</module>
+	  </modules>
 	<!-- 统一模块的依赖版本 -->
 	<dependencyManagement>
 		<dependencies>
@@ -50,16 +63,4 @@
 			</plugins>
 		</pluginManagement>
 	</build>
-  <modules>   
-	<module>spring-cloud-eureka-server</module>
-	<module>spring-cloud-eureka-client</module>
-	<module>spring-cloud-eureka-server-ha</module>	
-    <module>spring-cloud-eureka-server-ha-test</module>
-    <module>spring-cloud-eureka-consumer</module>
-    <module>spring-cloud-eureka-server-standalone</module>
-    <module>spring-cloud-eureka-consumer-ribbon</module>
-    <module>spring-cloud-eureka-client-api</module>
-    <module>spring-cloud-eureka-consumer-feign</module>
-    <module>spring-cloud-hystrix</module>
-  </modules>
 </project>

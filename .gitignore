@@ -7,3 +7,7 @@ target/
 .idea
 *.iml
 /bin/
+/spring-cloud-hystrix-dashboard/*.cmd
+/spring-cloud-hystrix-dashboard/.mvn/wrapper/*.jar
+/spring-cloud-hystrix-dashboard/mvnw
+*.jar

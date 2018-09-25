@@ -17,7 +17,7 @@ public class HelloClientFallbackFactory implements FallbackFactory<IHelloClient>
 	
 	@Override
 	public IHelloClient create(Throwable cause) {
-		log.error("feign调用发生异常，触发熔断", cause);
+		log.error("feign调用发生异常，触发fallback方法 ", cause);
 		return helloClient;
 	}
 
