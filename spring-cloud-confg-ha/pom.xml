@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>cn.lqdev.learning</groupId>
+    <artifactId>spring-cloud</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>spring-cloud-confg-ha</artifactId>
+  <packaging>pom</packaging>
+  <name>spring-cloud-config-ha</name>
+  <description>白话SpringCloud | 第八章：分配置中心的服务化及动态刷新</description>
+  <modules>
+    <module>spring-cloud-confg-ha-server</module>
+      <module>spring-cloud-confg-ha-client</module>
+  </modules>
+</project>
