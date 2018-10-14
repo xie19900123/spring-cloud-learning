@@ -41,7 +41,8 @@
     <module>spring-cloud-confg-server</module>
     <module>spring-cloud-confg-client</module>
     <module>spring-cloud-confg-ha</module>
-	  </modules>
+    <module>spring-cloud-zuul</module>
+  </modules>
 	<!-- 统一模块的依赖版本 -->
 	<dependencyManagement>
 		<dependencies>
