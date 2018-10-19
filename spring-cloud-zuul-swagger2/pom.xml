@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>cn.lqdev.learning</groupId>
+    <artifactId>spring-cloud</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>spring-cloud-zuul-swagger2</artifactId>
+  <packaging>pom</packaging>
+  <name>spring-cloud-zuul-swagger2</name>
+  <description>白话SpringCloud | 第十一章：路由网关(Zuul)：利用swagger2聚合API文档</description>
+  <modules>
+    <module>spring-cloud-zuul-gateway</module>
+    <module>spring-cloud-zuul-service-one</module>
+    <module>spring-cloud-zuul-service-two</module>
+  </modules>
+</project>
